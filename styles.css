@@ -409,13 +409,107 @@ span {
     margin: 2rem 0 3rem;
 }
 
-.services h2 {
+
+
+
+/* Overall Section Styling */
+.skills {
+    padding: 50px;
+    background: #081b29;
+}
+
+.skills-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.skills-content {
+    width: 30%;
+    min-width: 200px;
+}
+
+.skills-content h3 {
+    color: #00abf0;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.skills-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-content ul li {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.skills-graph {
+    width: 60%;
+    min-width: 200px;
+}
+
+.skill-bar {
+    margin-bottom: 20px;
+    position: relative;
+    background: #153d59;
+    border-radius: 25px;
+    height: 25px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.skill-bar span {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1.2rem;
+}
+
+.bar {
+    height: 100%;
+    background: linear-gradient(90deg, #00abf0, #00ff90);
+    border-radius: 25px;
+    width: 0; /* Initially set to 0 */
+    transition: width 2s ease-in-out;
+}
+
+/* Hover effect */
+.skill-bar:hover .bar {
+    background: linear-gradient(90deg, #00ff90, #00abf0);
+    transition: width 0.5s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .skills-content, .skills-graph {
+        width: 100%;
+        text-align: center;
+    }
+
+    .skill-bar span {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+/*.services h2 {
     margin-bottom: 5rem;
 }
 
 .services-container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
@@ -449,6 +543,9 @@ span {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
+*/
+
+
 
 .portfolio {
     background: #153d59;
@@ -611,3 +708,9 @@ span {
         width: 0;
     }
 }
+
+@keyframes loadSkill {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
