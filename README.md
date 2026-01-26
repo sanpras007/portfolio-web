@@ -33,8 +33,8 @@ The site is fully responsive, visually clean, and deployed using **Vercel** for 
 
 If you like this portfolio or want to collaborate, feel free to connect!
 
-- GitHub: https://github.com/your-username  
-- LinkedIn: *(add your LinkedIn link here)*  
+- GitHub: https://github.com/sanpras007
+- LinkedIn: https://www.linkedin.com/in/sanpras-santhosh-116261227 
 
 ---
 
