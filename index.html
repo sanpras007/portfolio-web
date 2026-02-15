@@ -31,9 +31,9 @@
             <h3>Hello, It's Me</h3>
             <h1>Sanpras Santhosh</h1>
             <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p>As a passionate software developer, I transform complex problems into seamless, innovative solutions.
-                With a keen eye for detail and efficient code, I thrive on crafting applications that are both
-                functional and elegant.</p>
+            <p>Associate Software Engineer at MyGate, transforming complex challenges into elegant solutions.
+                I craft scalable applications that impact millions of users, combining technical excellence
+                with creative innovation to build the future of technology.</p>
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/sanpras-santhosh-116261227/" target="_blank"><i
                         class='bx bxl-linkedin'></i></a>
@@ -45,23 +45,35 @@
             <a href="assets/Sanpras Santhosh_Resume.pdf" target="_blank" class="btn">Download CV</a>
         </div>
         <div class="home-img">
-            <img src="assets/pic2.png" alt="Profile Picture">
+            <div class="img-box">
+                <img src="assets/avatar_image.png" alt="Profile Picture">
+            </div>
         </div>
     </section>
 
     <section class="about" id="about">
-        <div class="about-img">
-            <img src="assets/pic1.png" alt="About Image">
+        <div class="about-visual">
+            <canvas id="aboutCanvas"></canvas>
+            <div class="code-overlay">
+                <div class="code-line">&lt;Developer /&gt;</div>
+                <div class="code-line">const skills = [</div>
+                <div class="code-line"> 'Full Stack',</div>
+                <div class="code-line"> 'Problem Solving',</div>
+                <div class="code-line"> 'Innovation'</div>
+                <div class="code-line">];</div>
+            </div>
         </div>
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
-            <h3>Software Developer</h3>
-            <p>Hello! I'm Sanpras Santhosh, a passionate and dedicated BTech engineering student specializing in
-                Computer Science at APJKTU. With a strong foundation in software development and app creation, I thrive
-                on turning innovative ideas into functional and user-friendly solutions. My academic journey has
-                equipped me with a solid understanding of computer science principles, which I continually apply to my
-                projects.</p>
-            <a href="#" class="btn">Read More</a>
+            <h3>Associate Software Engineer @ MyGate</h3>
+            <p>Hello! I'm Sanpras Santhosh, an Associate Software Engineer at MyGate, where I craft innovative solutions
+                that impact millions of users daily. With a strong foundation in full-stack development and a passion
+                for
+                creating seamless user experiences, I transform complex challenges into elegant, scalable applications.
+                My role at MyGate allows me to work on cutting-edge technology, building features that enhance security
+                and convenience for communities across India. I bring together technical expertise and creative
+                problem-solving to deliver exceptional results.</p>
+            <a href="#contact" class="btn">Let's Connect</a>
         </div>
     </section>
 
@@ -219,6 +231,12 @@
 
     <!-- EmailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- Scroll Animations -->
+    <script src="assets/scroll-animations.js"></script>
+
+    <!-- About Section Animation -->
+    <script src="assets/about-animation.js"></script>
 
     <script src="script.js"></script>
 </body>
