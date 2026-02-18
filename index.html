@@ -80,54 +80,298 @@
     <section class="skills" id="skills">
         <h2 class="heading">My <span>Skills</span></h2>
 
-        <div class="skills-row">
-            <div class="skills-column">
-                <h3 class="title">Coding Skills</h3>
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>HTML <span>90%</span></h3>
-                            <div class="bar"><span data-width="90%"></span></div>
+        <div class="skills-container">
+            <!-- Frontend Development -->
+            <div class="skill-category">
+                <h3>Frontend Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <i class='bx bxl-html5'></i>
+                            <div>
+                                <h4>HTML5</h4>
+                                <span class="level">Expert</span>
+                            </div>
+                            <i class='bx bx-chevron-down toggle-icon'></i>
                         </div>
-                        <div class="progress">
-                            <h3>CSS <span>80%</span></h3>
-                            <div class="bar"><span data-width="80%"></span></div>
+                        <div class="skill-details">
+                            <p>Semantic markup, Accessibility, SEO.</p>
+                            <div class="related-projects">
+                                <span>Portfolio</span>
+                                <span>Expense Tracker</span>
+                            </div>
                         </div>
-                        <div class="progress">
-                            <h3>JavaScript <span>75%</span></h3>
-                            <div class="bar"><span data-width="75%"></span></div>
+                    </div>
+                    <div class="skill-card" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <i class='bx bxl-css3'></i>
+                            <div>
+                                <h4>CSS3</h4>
+                                <span class="level">Advanced</span>
+                            </div>
+                            <i class='bx bx-chevron-down toggle-icon'></i>
                         </div>
-                        <div class="progress">
-                            <h3>Python <span>90%</span></h3>
-                            <div class="bar"><span data-width="90%"></span></div>
+                        <div class="skill-details">
+                            <p>Animations, Flexbox, Grid, Responsive Design.</p>
+                            <div class="related-projects">
+                                <span>Portfolio</span>
+                                <span>Weather App</span>
+                            </div>
                         </div>
-                        <div class="progress">
-                            <h3>Java <span>80%</span></h3>
-                            <div class="bar"><span data-width="80%"></span></div>
+                    </div>
+                    <div class="skill-card" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <i class='bx bxl-javascript'></i>
+                            <div>
+                                <h4>JavaScript</h4>
+                                <span class="level">Advanced</span>
+                            </div>
+                            <i class='bx bx-chevron-down toggle-icon'></i>
+                        </div>
+                        <div class="skill-details">
+                            <p>ES6+, DOM Manipulation, Async/Await.</p>
+                            <div class="related-projects">
+                                <span>Portfolio</span>
+                                <span>Interactive Dashboards</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <i class='bx bxl-react'></i>
+                            <div>
+                                <h4>React</h4>
+                                <span class="level">Intermediate</span>
+                            </div>
+                            <i class='bx bx-chevron-down toggle-icon'></i>
+                        </div>
+                        <div class="skill-details">
+                            <p>Components, Hooks, State Management.</p>
+                            <div class="related-projects">
+                                <span>Weather App</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="skills-column">
-                <h3 class="title">Professional Skills</h3>
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>Web Development <span>85%</span></h3>
-                            <div class="bar"><span data-width="85%"></span></div>
+            <!-- Backend Engineering -->
+            <div class="skill-category">
+                <h3>Backend Engineering</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <i class='bx bxl-python'></i>
+                            <div>
+                                <h4>Python</h4>
+                                <span class="level">Expert</span>
+                            </div>
+                            <i class='bx bx-chevron-down toggle-icon'></i>
                         </div>
-                        <div class="progress">
-                            <h3>App Development <span>70%</span></h3>
-                            <div class="bar"><span data-width="70%"></span></div>
+                        <div class="skill-details">
+                            <p>Data Structures, Algorithms, Automation.</p>
+                            <div class="related-projects">
+                                <span>Auto Eval System</span>
+                                <span>AI/ML Projects</span>
+                            </div>
                         </div>
-                        <div class="progress">
-                            <h3>Database Management <span>80%</span></h3>
-                            <div class="bar"><span data-width="80%"></span></div>
+                    </div>
+                    <div class="skill-card" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <i class='bx bxl-django'></i>
+                            <div>
+                                <h4>Django</h4>
+                                <span class="level">Advanced</span>
+                            </div>
+                            <i class='bx bx-chevron-down toggle-icon'></i>
                         </div>
-                        <div class="progress">
-                            <h3>Problem Solving <span>95%</span></h3>
-                            <div class="bar"><span data-width="95%"></span></div>
+                        <div class="skill-details">
+                            <p>REST API, ORM, Auth, MVC Architecture.</p>
+                            <div class="related-projects">
+                                <span>Auto Eval System</span>
+                                <span>Expense Tracker</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <i class='bx bxl-java'></i>
+                            <div>
+                                <h4>Java</h4>
+                                <span class="level">Intermediate</span>
+                            </div>
+                            <i class='bx bx-chevron-down toggle-icon'></i>
+                        </div>
+                        <div class="skill-details">
+                            <p>OOP, Multi-threading, Enterprise Apps.</p>
+                            <div class="related-projects">
+                                <span>Academic Projects</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI & Machine Learning -->
+            <div class="skill-category">
+                <h3>AI & Machine Learning</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <i class='bx bx-brain'></i>
+                            <div>
+                                <h4>NLP</h4>
+                                <span class="level">Advanced</span>
+                            </div>
+                            <i class='bx bx-chevron-down toggle-icon'></i>
+                        </div>
+                        <div class="skill-details">
+                            <p>Text Processing, Tokenization, Sentiment Analysis.</p>
+                            <div class="related-projects">
+                                <span>Auto Eval System</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <i class='bx bx-microchip'></i>
+                            <div>
+                                <h4>Transformers</h4>
+                                <span class="level">Intermediate</span>
+                            </div>
+                            <i class='bx bx-chevron-down toggle-icon'></i>
+                        </div>
+                        <div class="skill-details">
+                            <p>BERT models, Hugging Face, Fine-tuning.</p>
+                            <div class="related-projects">
+                                <span>Auto Eval System</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <i class='bx bx-data'></i>
+                            <div>
+                                <h4>Pandas/NumPy</h4>
+                                <span class="level">Advanced</span>
+                            </div>
+                            <i class='bx bx-chevron-down toggle-icon'></i>
+                        </div>
+                        <div class="skill-details">
+                            <p>Data Analysis, Cleaning, Manipulation.</p>
+                            <div class="related-projects">
+                                <span>AI/ML Projects</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- App Development -->
+            <div class="skill-category">
+                <h3>App Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <i class='bx bxl-flutter'></i>
+                            <div>
+                                <h4>Flutter</h4>
+                                <span class="level">Intermediate</span>
+                            </div>
+                            <i class='bx bx-chevron-down toggle-icon'></i>
+                        </div>
+                        <div class="skill-details">
+                            <p>Cross-platform apps, Dart, Widgets.</p>
+                            <div class="related-projects">
+                                <span>Study Planner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <i class='bx bx-mobile-alt'></i>
+                            <div>
+                                <h4>FlutterFlow</h4>
+                                <span class="level">Advanced</span>
+                            </div>
+                            <i class='bx bx-chevron-down toggle-icon'></i>
+                        </div>
+                        <div class="skill-details">
+                            <p>Low-code dev, Firebase Integration, UI Design.</p>
+                            <div class="related-projects">
+                                <span>Help Hub</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Database & Systems -->
+            <div class="skill-category">
+                <h3>Database & Systems</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <i class='bx bxl-postgresql'></i>
+                            <div>
+                                <h4>PostgreSQL</h4>
+                                <span class="level">Advanced</span>
+                            </div>
+                            <i class='bx bx-chevron-down toggle-icon'></i>
+                        </div>
+                        <div class="skill-details">
+                            <p>Complex Queries, Relations, Optimization.</p>
+                            <div class="related-projects">
+                                <span>Expense Tracker</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <i class='bx bxl-mongodb'></i>
+                            <div>
+                                <h4>MongoDB</h4>
+                                <span class="level">Intermediate</span>
+                            </div>
+                            <i class='bx bx-chevron-down toggle-icon'></i>
+                        </div>
+                        <div class="skill-details">
+                            <p>NoSQL, Document Store, Aggregation.</p>
+                            <div class="related-projects">
+                                <span>Study Planner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <i class='bx bxl-aws'></i>
+                            <div>
+                                <h4>AWS</h4>
+                                <span class="level">Working Knowledge</span>
+                            </div>
+                            <i class='bx bx-chevron-down toggle-icon'></i>
+                        </div>
+                        <div class="skill-details">
+                            <p>EC2, S3, Deployment, Cloud Basics.</p>
+                            <div class="related-projects">
+                                <span>Expense Tracker</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card" onclick="toggleSkill(this)">
+                        <div class="skill-header">
+                            <i class='bx bxl-firebase'></i>
+                            <div>
+                                <h4>Firebase</h4>
+                                <span class="level">Intermediate</span>
+                            </div>
+                            <i class='bx bx-chevron-down toggle-icon'></i>
+                        </div>
+                        <div class="skill-details">
+                            <p>Auth, Firestore, Realtime DB.</p>
+                            <div class="related-projects">
+                                <span>Help Hub</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -139,75 +383,143 @@
         <h2 class="heading">Latest <span>Projects</span></h2>
         <div class="portfolio-container">
             <div class="portfolio-box" data-tilt>
-                <img src="assets/website.jpeg" alt="">
+                <img src="assets/home.png" alt="Automated Evaluation System">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Latest web design projects.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <span class="badge">Research Project</span>
+                    <h4>Automated Answer Evaluation</h4>
+                    <p>AI-powered system for evaluating subjective answers using OCR, NLP & Transformers.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>NLP</span>
+                        <span>Transformers</span>
+                    </div>
+                    <a href="https://github.com/sanpras007/s8_main_project"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
 
             <div class="portfolio-box" data-tilt>
-                <img src="example.jpeg" alt="">
+                <img src="assets/ai_ml_image.jpg" alt="Expense Tracker">
                 <div class="portfolio-layer">
-                    <h4>Python Project</h4>
-                    <p>Advanced python automation scripts.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <span class="badge">AL/ML Project</span>
+                    <h4>AI/ML Project done in 2025</h4>
+                    <p>Project made for L&T couse</p>
+                    <div class="tech-stack">
+                        <span>AI/ML</span>
+                        <span>Pandas</span>
+                        <span>data</span>
+                    </div>
+                    <a href="https://github.com/sanpras007/L-T-work"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
 
             <div class="portfolio-box" data-tilt>
-                <img src="example.jpeg" alt="">
+                <img src="assets/my_food_home_page.png" alt="Expense Tracker">
                 <div class="portfolio-layer">
-                    <h4>AI/ML Code</h4>
-                    <p>Machine learning models and implementations.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <span class="badge">Live on AWS</span>
+                    <h4>Smart Expense Tracker</h4>
+                    <p>Cloud-deployed daily food/snack budget manager with carry-forward logic.</p>
+                    <div class="tech-stack">
+                        <span>Django</span>
+                        <span>AWS</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <a href="https://github.com/sanpras007/my_food_app"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
 
             <div class="portfolio-box" data-tilt>
-                <img src="assets/helphub.jpeg" alt="">
+                <img src="assets/helphub.jpeg" alt="Help Hub App">
                 <div class="portfolio-layer">
+                    <span class="badge">Community Support</span>
                     <h4>Help Hub App</h4>
-                    <p>Community support application.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <p>Comprehensive assistance app developed in FlutterFlow with Firebase integration.</p>
+                    <div class="tech-stack">
+                        <span>FlutterFlow</span>
+                        <span>Firebase Auth</span>
+                        <span>Firebase DB</span>
+                    </div>
+                    <a href="#"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
 
             <div class="portfolio-box" data-tilt>
-                <img src="assets/instantgram.jpg" alt="">
+                <img src="assets/weathe app.png" alt="Weather App">
                 <div class="portfolio-layer">
-                    <h4>Social Media App</h4>
-                    <p>Next-gen social networking platform.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <span class="badge">React & API</span>
+                    <h4>Weather App</h4>
+                    <p>Real-time weather forecast application using dynamic APIs.</p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>REST API</span>
+                        <span>CSS</span>
+                    </div>
+                    <a href="https://github.com/sanpras007/weather_app"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
 
             <div class="portfolio-box" data-tilt>
-                <img src="assets/studyplanner.jpg" alt="">
+                <img src="assets/studyplanner.jpg" alt="Study Planner">
                 <div class="portfolio-layer">
+                    <span class="badge">Productivity Tool</span>
                     <h4>Study Planner</h4>
-                    <p>Productivity tool for students.</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <p>To-do and study tracking application for students.</p>
+                    <div class="tech-stack">
+                        <span>Flutter</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <a href="https://github.com/sanpras007/study_planner_flutter"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-        <form id="contact-form" action="#">
-            <div class="input-box">
-                <input type="text" id="name" placeholder="Full Name" required>
-                <input type="email" id="email" placeholder="Email Address" required>
+        <div class="contact-container">
+            <h2 class="heading">Let's Build <span>Something Together</span></h2>
+            <p class="contact-subtitle">Tell me about your idea. I personally read every message.</p>
+
+            <div class="contact-wrapper" data-tilt>
+                <form id="contact-form" action="#">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <input type="text" id="name" required placeholder=" ">
+                            <label for="name">Full Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email">Email Address</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <input type="number" id="phone" placeholder=" ">
+                            <label for="phone">Mobile Number (Optional)</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="subject" required placeholder=" ">
+                            <label for="subject">Email Subject</label>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" cols="30" rows="10" required placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+
+                    <button type="submit" class="btn submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <i class='bx bx-send send-icon'></i>
+                        <div class="loader"></div>
+                        <i class='bx bx-check success-icon'></i>
+                    </button>
+                    <p id="msg" class="message-status"></p>
+                </form>
+                <p class="credibility-note">
+                    <i class='bx bx-shield-quarter'></i>
+                    This is not a dummy form. Messages are delivered directly to my inbox. Feel free to test it.
+                </p>
             </div>
-            <div class="input-box">
-                <input type="number" id="phone" placeholder="Mobile Number">
-                <input type="text" id="subject" placeholder="Email Subject" required>
-            </div>
-            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
+        </div>
     </section>
 
     <footer class="footer">

@@ -45,7 +45,7 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form, .skill-category', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
@@ -87,35 +87,19 @@ themeToggle.addEventListener('click', () => {
     }
 });
 
-/* ================= skil bar animation ================= */
-const skillsSection = document.getElementById('skills');
-const progressBars = document.querySelectorAll('.bar span');
-
-function showProgress() {
-    progressBars.forEach(progressBar => {
-        const value = progressBar.dataset.width;
-        progressBar.style.opacity = 1;
-        progressBar.style.width = value;
+/* ================= interactive skill cards ================= */
+function toggleSkill(card) {
+    // Close other open cards for a cleaner UI
+    const allCards = document.querySelectorAll('.skill-card');
+    allCards.forEach(c => {
+        if (c !== card && c.classList.contains('active')) {
+            c.classList.remove('active');
+        }
     });
+
+    // Toggle the clicked card
+    card.classList.toggle('active');
 }
-
-function hideProgress() {
-    progressBars.forEach(p => {
-        p.style.opacity = 0;
-        p.style.width = 0;
-    });
-}
-
-window.addEventListener('scroll', () => {
-    const sectionPos = skillsSection.getBoundingClientRect().top;
-    const screenPos = window.innerHeight / 2;
-
-    if (sectionPos < screenPos) {
-        showProgress();
-    } else {
-        hideProgress();
-    }
-});
 
 /* ================= vanilla tilt ================= */
 VanillaTilt.init(document.querySelectorAll(".portfolio-box"), {
@@ -130,9 +114,16 @@ VanillaTilt.init(document.querySelectorAll(".portfolio-box"), {
 emailjs.init("LcKEyTnRd20kslqZt");
 
 const contactForm = document.getElementById('contact-form');
+const submitBtn = document.querySelector('.submit-btn');
+const msgStatus = document.getElementById('msg');
 
 contactForm.addEventListener('submit', function (e) {
     e.preventDefault();
+
+    // Visual Feedback: Show Loader
+    submitBtn.classList.add('loading');
+    msgStatus.textContent = '';
+    msgStatus.className = 'message-status';
 
     // Get input values
     const name = document.getElementById('name').value;
@@ -153,10 +144,26 @@ contactForm.addEventListener('submit', function (e) {
     // REPLACE WITH YOUR SERVICE ID AND TEMPLATE ID
     emailjs.send("service_mgxgs1j", "template_z6uxqj8", templateParams)
         .then(function (response) {
-            alert('Message Sent Successfully!');
-            contactForm.reset();
+            // Success Animation
+            submitBtn.classList.remove('loading');
+            submitBtn.classList.add('success');
+
+            msgStatus.textContent = "🚀 Message Delivered. I’ll get back to you within 24 hours.";
+            msgStatus.classList.add('success');
+
+            // Reset Form after delay
+            setTimeout(() => {
+                contactForm.reset();
+                submitBtn.classList.remove('success');
+                msgStatus.textContent = '';
+                msgStatus.classList.remove('success');
+            }, 5000);
+
         }, function (error) {
-            alert('Failed to send message. Please try again.');
+            // Error Handling
+            submitBtn.classList.remove('loading');
+            msgStatus.textContent = '❌ Failed to send. Please try again.';
+            msgStatus.classList.add('error');
             console.log('FAILED...', error);
         });
 });
